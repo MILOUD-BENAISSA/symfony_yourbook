@@ -2,10 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\AdminRepository;
+
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
+use App\Repository\AdminRepository;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 #[ORM\Entity(repositoryClass: AdminRepository::class)]
 class Admin implements UserInterface, PasswordAuthenticatedUserInterface
